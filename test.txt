@@ -1,0 +1,30 @@
+<?php 
+		
+		$verzeichnisname = getcwd() . "/img/thumbnails";
+
+		$array = scandir($verzeichnisname);
+		
+		foreach ($array as $datei){
+			if(is_file("img/thumbnails/" . $datei) && $datei != "Thumbs.db"){
+				
+				echo "<div class=\"picture\">";
+				echo "<a href='img/bilder/$datei' target='bild' rel='lightbox[drahtkunst]'>";
+				echo "<img src=\"img/thumbnails/$datei\" alt=\"$datei\"/>";
+				echo "</a>";
+				echo "</div>";
+				
+				$datei = str_replace(".jpeg", "", $datei);
+				$datei = str_replace(".jpg", "", $datei);
+				$datei = str_replace("_", " ", $datei);
+				$datei = str_replace("ae", "ä", $datei);
+				$datei = str_replace("oe", "Ö", $datei);
+				$datei = str_replace("ue", "ü", $datei);
+				$datei = str_replace("Ae", "Ä", $datei);
+				$datei = str_replace("Oe", "Ö", $datei);
+				$datei = str_replace("Ue", "Ü", $datei);
+				$datei = ucwords($datei);
+
+				
+			}
+		}
+	?>

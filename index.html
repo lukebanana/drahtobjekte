@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de-CH" xml:lang="de-CH">
+<head>
+	<title>:: Home - Atelier Aliesch ::</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="publisher" content="Lukas Abegg" />
+	<meta name="description" content="Atelier für schöne, edle Schweizer Drahtkunst.  Anna-Liisa Aliesch erschafft kreative Objekte aus Draht, in Handarbeit." />
+	<meta name="keywords" content="Aliesch, Draht, farbig, Kunst, Schweiz, Atelier, Galerie, gallery, edel, bunt, schön, Wand, wall, art, style, Swiss, original" />
+	<meta name="robots" content="index, follow" />
+	<meta name="revisit-after" content="30 days" />
+	<meta http-equiv="window-target" content="_top" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js" /></script>
+	<script type="text/javascript">
+		/*<![CDATA[*//*---->*/
+			$(document).ready(function() {				
+				setHoverEffects('#button1');
+				setHoverEffects('#button2');
+				setHoverEffects('#button3');
+				setHoverEffects('#button4');
+			
+				function setHoverEffects(kandidat){
+					$(kandidat).hover(
+						function(){			
+							$(kandidat + ' .menu-pic').fadeIn(500);
+						},
+						function(){	
+							if(!$(kandidat + ' .menu-pic').hasClass('active_link') ){
+								$(kandidat+ ' .menu-pic').fadeOut(200);
+							}
+						}
+					);
+				}
+			});
+		/*--*//*]]>*/
+	</script>
+</head>
+<body>
+
+	<div id="seite">
+	
+	<div id="header"></div>
+
+	<div id="navigation">
+		<ul>
+			<li id="button1">
+				<div class="menu-pic active_link"></div>
+				<a href="index.html">About</a>
+			</li>
+			<li id="button2">
+				<div class="menu-pic menu-pic-rechts"></div>
+				<a href="ausstellungen.html">Austellungen</a>
+			</li>
+			<li id="button3">
+				<div class="menu-pic"></div>
+				<a href="galerie.php">Galerie</a>
+			</li>
+			<li id="button4">
+				<div class="menu-pic menu-pic-rechts"></div>
+				<a href="kontakt.html">Kontakt</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="content">
+	<h1>About Anna-Liisa Aliesch</h1><br /><img id="portrait" width="151" height="225" width alt="Portrait von Anna-Liisa Aliesch" src="img/portrait/Portrait.jpg" />
+	<p>Ich spiele bei meinen Objekten gerne mit Gegensätzen von dick und dünn, kräftig und zart, üppig und reduziert, farbig und blass. Das Metall kombiniere ich mit anderen Materialien wie Stoff, Plastik, Gips oder was mir sonst noch in die Finger kommt. Das kann auch mal eine Feder sein. Der Phantasie sind keine Grenzen gesetzt.</p>
+	<br />
+	<p>Unzählige Einzelteile werden auf einem Gitternetz zusammen gefügt. Es sind manchmal Teile, die schon länger in Schachteln herumlagen. Weil sie sich letztes Mal farblich und förmlich nicht kombinieren liessen. Nebeneinander und übereinander entsteht dann ein Drahtwickelobjekt. Diese wirken jeden Tag anders, immer wieder gibt es ein kleines, neues Detail zu entdecken.</p>
+	<br />
+	<p>Gewisse Drähte ragen über den Rand hinaus. Auch mal ein einzelnes Insekt oder ein einzelner Fisch. Das ist meine Absicht. Das Ganze soll nicht abgeschlossen, sondern unendlich und offen wirken.
+	<br />
+	<p>Es lohnt sich, bei den Fischen, Insekten, Buchstaben, Texten, Herzen und vielen anderen Figuren zu verweilen. Je nach Licht werfen die Figuren Schatten – ein zweites Bild entsteht. Die Formen ändern sich so für einen kurzen Moment.</p>
+
+	</div>
+
+	<div id="footer">&copy; 2012, Anna-Liisa Aliesch, Lukas Abegg</div>
+
+	</div>
+
+ </body>
+</html>

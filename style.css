@@ -1,0 +1,236 @@
+/* CSS Ateilier 8.12.11 abl*/
+
+html {
+	height:101%;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+h1{
+	font-size: 26px;
+}
+
+/*-------------------------Gesamte Page-------------------------*/
+#seite{
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	margin: 0 auto;
+	width: 960px;
+	background-color: white;
+	font-size: 15px;
+}
+
+/*---------------------------Header-----------------------------*/
+#header{
+	width: 960px;
+	height: 112px;
+	border-bottom: 1px solid black;
+	text-align: center;
+	background-image: url("img/header1.png");
+	background-color: white;
+
+}
+
+/*-----------------------Linke Navigation-----------------------*/
+#navigation{
+	font-size: 16px;
+	width: 220px;
+	float: left;
+	background-color: white;
+}
+
+#navigation ul{
+	list-style: none;
+}
+
+#navigation li{
+	position: relative;	
+	padding-top: 10px;
+}
+
+#navigation a{
+	outline: 0; 
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	display: block;
+	padding-top: 8px;
+	height: 60px;
+	text-decoration: none;
+	color: black;
+}
+
+#navigation a:hover{
+	text-decoration: underline;
+}
+
+.menu-pic{
+	display: none;
+	width: 300px;
+	height: 60px;
+	position: absolute;
+	top: 0px;
+	z-index: 0;
+}
+
+.menu-pic-rechts{
+	left: -80px;
+}
+
+#button1 .menu-pic{
+	height: 60px;
+	background: url("img/buttom1.png") top left no-repeat;
+}
+
+#button2 .menu-pic{
+	height: 60px;
+	background: url("img/buttom2.png") top right no-repeat;
+}
+
+#button3 .menu-pic{
+	height: 60px;
+	background: url("img/buttom3.png") top left no-repeat;
+}
+
+#button4 .menu-pic{
+	height: 60px;
+	background: url("img/buttom4.png") top right no-repeat;
+}
+
+.active_link{
+	display: block;
+}
+
+/*
+#button1:hover, #link1_aktiv{
+	background: url("img/buttom1.png") top left no-repeat;
+}
+#button2:hover, #link2_aktiv{
+	background: url("img/buttom2.png") top right no-repeat;
+}
+#button3:hover, #link3_aktiv{
+	background: url("img/buttom3.png") top left no-repeat;
+}
+#button4:hover, #link4_aktiv{
+	background: url("img/buttom4.png") top right no-repeat;
+}*/
+
+#navigation a:visited{
+	color: black;
+}
+
+#navigation a:active{
+	color: black;
+	text-decoration: underline;
+}
+
+/*-------------------------Seiteninhalt-------------------------*/
+#content{
+	width: 689px;
+	min-height: 400px;
+	margin-left: 220px;
+	padding: 25px;
+	text-align: justify;
+	background-color: white;
+	border-left: 1px solid black;
+}
+
+#portrait{
+	float: right;
+	margin: 0px 0px 5px 10px;
+	border: 1px solid black;
+}
+
+#ausstellung{
+	text-align: center;
+	width: 240px;
+	height: 84px;
+	border: 1px solid gray;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#ausstellung h3{
+	font-size: 16px;
+}
+.underline{
+	text-decoration: underline;
+}
+#ausstellung a{
+	text-decoration: none;
+	font-size: 12px;
+	color: black;
+}
+#ausstellung a:hover{
+	color: gray;
+}
+/*---------------------------Gallery----------------------------*/
+.picture {
+	position: relative;
+	float: left;
+	height: 160px;
+	width: 166px;
+	margin: 10px;
+	padding-top: 12px;
+	text-align: center;
+	border: 1px solid gray;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.picture p{
+	font-size: 11px;
+	position: absolute;
+	top: 145px;
+	width: 100%;
+	text-align: center;
+}
+
+.picture img{
+	border-width: 0px;
+}
+
+
+/*------------------------Kontaktformular-----------------------*/
+#kontaktformular fieldset{
+	padding: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#kontaktformular ul{
+	padding: 0px;
+	list-style: none;
+}
+
+label{
+	float: left;
+	width: 70px;
+}
+#nachricht-label{
+	width: 120px;
+}
+
+.button{
+	padding: 1%;
+}
+
+/*----------------------------Footer---------------------------*/
+#footer{
+	clear: both;
+	width: 930px;
+	height: 20px;
+	padding: 15px;
+	font-size: 14px;
+	background-color: white;
+	border-top: 1px solid black;
+}
+
+.kleingeschrieben{
+	font-size: 14px;
+}
